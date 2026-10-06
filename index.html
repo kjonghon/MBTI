@@ -13,7 +13,7 @@
   <script>
     try {
       const savedLanguage = localStorage.getItem('mindmetric-language');
-      document.documentElement.lang = ['ru', 'kk', 'en', 'es', 'zh', 'ar'].includes(savedLanguage) ? savedLanguage : 'ru';
+      document.documentElement.lang = ['ru', 'kk', 'en', 'es', 'zh', 'ar', 'ko'].includes(savedLanguage) ? savedLanguage : 'ru';
       document.documentElement.dir = savedLanguage === 'ar' ? 'rtl' : 'ltr';
     } catch (error) {
       document.documentElement.lang = 'ru';
@@ -197,17 +197,15 @@
           <i id="theme-toggle-icon" class="fa-solid fa-moon" aria-hidden="true"></i>
           <span id="theme-toggle-label" class="hidden sm:inline">다크 모드</span>
         </button>
-        <label class="inline-flex items-center gap-1.5" for="language-select">
-          <i class="fa-solid fa-globe" aria-hidden="true"></i>
-          <select id="language-select" aria-label="Выберите язык" onchange="changeLanguage(this.value)" class="max-w-[7rem] rounded-lg border border-slate-200 bg-white px-2 py-2 text-xs text-slate-700">
-            <option value="ru">Русский</option>
-            <option value="kk">Қазақша</option>
-            <option value="en">English</option>
-            <option value="es">Español</option>
-            <option value="zh">中文</option>
-            <option value="ar">العربية</option>
-          </select>
-        </label>
+        <div class="relative" id="language-picker">
+          <button id="language-select" type="button" aria-label="Выберите язык" aria-haspopup="menu" aria-expanded="false" onclick="toggleLanguageMenu()" class="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-2 py-2 text-xs text-slate-700 hover:bg-slate-100 transition">
+            <img id="language-flag" src="./assets/flags/ru.svg" alt="" aria-hidden="true" class="h-4 w-5 rounded-sm object-cover">
+            <span id="language-name">Русский</span>
+            <i class="fa-solid fa-chevron-down text-[0.6rem]" aria-hidden="true"></i>
+          </button>
+          <div id="language-menu" role="menu" aria-labelledby="language-select" hidden class="absolute right-0 z-50 mt-1 w-40 overflow-hidden rounded-lg border border-slate-200 bg-white py-1 shadow-lg">
+          </div>
+        </div>
         <button onclick="restartTest()" class="text-slate-600 hover:text-indigo-600 transition inline-flex items-center gap-1.5">
           <i class="fa-solid fa-house sm:hidden" aria-hidden="true"></i>
           <span class="hidden sm:inline">처음으로</span>
@@ -819,7 +817,8 @@
         en: `Question ${currentIndex + 1} of ${questions.length} (${pct}%)`,
         es: `Pregunta ${currentIndex + 1} de ${questions.length} (${pct}%)`,
         zh: `第 ${currentIndex + 1} / ${questions.length} 题（${pct}%）`,
-        ar: `السؤال ${currentIndex + 1} من ${questions.length} (${pct}٪)`
+        ar: `السؤال ${currentIndex + 1} من ${questions.length} (${pct}٪)`,
+        ko: `전체 ${questions.length}문항 중 ${currentIndex + 1}번 (${pct}%)`
       }[currentLanguage];
       document.getElementById('progress-text').innerText = progressLabel;
 

@@ -1031,6 +1031,57 @@ window.MINDMETRIC_I18N = {
       "أفضّل إنجاز المهام مبكراً بدلاً من تأجيلها إلى اللحظة الأخيرة.",
       "إذا تغيرت الخطة، أراها فرصة جديدة بدلاً من الشعور بالتوتر."
     ]
+  },
+  ko: {
+    name: "한국어",
+    dir: "ltr",
+    pageTitle: "4축 성향 자기성찰 검사 | MINDMETRIC",
+    description: "16개 문항으로 네 가지 선호 경향을 살펴보세요. 점수 계산 방식과 비공식 자기성찰 도구의 한계를 안내합니다.",
+    languageLabel: "언어 선택",
+    darkMode: "다크 모드",
+    lightMode: "라이트 모드",
+    profileTitle: "{code} 프로파일",
+    privacyTitle: "개인정보 및 광고 안내 | MINDMETRIC",
+    privacyDescription: "MINDMETRIC의 검사 답변 처리, 브라우저 설정, 광고 쿠키 및 개인정보 문의 방법을 알아보세요.",
+    shareTitle: "MINDMETRIC 자기성찰 결과",
+    shareText: "나의 자기성찰 결과: {code} ({title}). 비공식 참고용 결과입니다.",
+    shareManual: "결과를 공유하려면 아래 내용을 복사하세요:",
+    shareCopied: "결과와 페이지 주소를 복사했습니다.",
+    shareFailure: "공유에 실패했습니다. 페이지 주소를 직접 복사해 주세요.",
+    profileDescription: "응답을 바탕으로 네 가지 선호 경향을 요약한 {code} 결과입니다. 진단이 아니라 스스로를 돌아보기 위한 참고 자료입니다.",
+    profileStrengths: ["응답에 나타난 선호 경향을 살펴보세요", "결과를 자기성찰의 계기로 활용해 보세요", "상황과 개인의 경험을 함께 고려하세요"],
+    profileWeaknesses: ["점수만으로 한 사람의 성격 전체를 설명할 수 없습니다", "선호는 상황에 따라 달라질 수 있습니다", "중요한 의사결정의 유일한 근거로 사용하지 마세요"],
+    careerIdeas: ["협업 및 개인 작업 환경", "분석 및 창의적 과제", "체계적이고 유연한 업무 방식"],
+    text: {
+      "유형별 참고 프로파일입니다.": "응답을 바탕으로 살펴보는 비공식 참고 프로파일입니다.",
+      "외향성 (E)": "외향성 (E)",
+      "내향성 (I)": "내향성 (I)",
+      "감각형 (S)": "감각형 (S)",
+      "직관형 (N)": "직관형 (N)",
+      "사고형 (T)": "사고형 (T)",
+      "감정형 (F)": "감정형 (F)",
+      "판단형 (J)": "판단형 (J)",
+      "인식형 (P)": "인식형 (P)"
+    },
+    categories: ["에너지 방향 (외향 E / 내향 I)", "정보 인식 (감각 S / 직관 N)", "의사결정 (사고 T / 감정 F)", "생활 방식 (판단 J / 인식 P)"],
+    questions: [
+      "새로운 사람들과 모여 대화를 나누면 에너지가 충전되는 편이다.",
+      "긴 하루를 보낸 후에는 조용히 혼자만의 시간을 가질 때 비로소 힐링이 된다.",
+      "모임이나 워크숍에서 침묵이 길어지면 먼저 입을 열어 분위기를 주도한다.",
+      "주변 사람들로부터 말수가 적고 생각을 깊이 품고 있다는 이야기를 자주 듣는다.",
+      "아이디어를 논의할 때 이론이나 가능성보다는 실제 적용 가능한 데이터와 사실을 중시한다.",
+      "기존의 정해진 방식보다는 새롭고 파격적인 비전이나 은유적 해석에 자주 끌린다.",
+      "현재 눈앞에 벌어진 구체적인 현실과 디테일을 관찰하는 것이 편안하다.",
+      "‘만약 세상이 이렇다면 어떨까?’ 같은 추상적이고 미래 지향적인 상상을 자주 한다.",
+      "중요한 의사결정을 내릴 때 개인적 감정보다는 논리적 원칙과 객관적 인과관계를 우선한다.",
+      "타인의 고민을 들었을 때 논리적 해결책 제시보다 그 사람의 감정에 깊이 공감하는 것이 먼저다.",
+      "누군가 비효율적이거나 논리적 오류를 범하면 감정이 상하지 않게 지적해주는 편이다.",
+      "어떤 결정을 내릴 때 그 결정이 조직 구성원들의 화합과 기분에 미칠 영향을 가장 중요하게 본다.",
+      "여행이나 프로젝트를 진행할 때 일정표와 체크리스트가 명확해야 심리적 안정을 얻는다.",
+      "엄격한 마감과 일정보다는 상황 변화에 따라 유연하게 즉흥적으로 대처하는 편이다.",
+      "할 일은 마지막 순간으로 미루지 않고 미리미리 계획대로 매듭지어야 직성이 풀린다.",
+      "계획이 틀어지더라도 스트레스를 받기보다는 또 다른 새로운 기회로 즐기는 편이다."
+    ]
   }
 };
 
@@ -1040,9 +1091,65 @@ window.MINDMETRIC_LANGUAGE_NAMES = Object.fromEntries(
 
 const originalTextNodes = new WeakMap();
 const supportedSiteLanguages = Object.keys(window.MINDMETRIC_I18N);
+const languageFlags = {
+  ru: "ru",
+  kk: "kz",
+  en: "gb",
+  es: "es",
+  zh: "cn",
+  ar: "sa",
+  ko: "kr"
+};
 
 function normalizeTranslationKey(value) {
   return value.replace(/\s+/g, " ").trim();
+}
+
+function setLanguageMenuOpen(isOpen) {
+  const button = document.getElementById("language-select");
+  const menu = document.getElementById("language-menu");
+  if (!button || !menu) return;
+  menu.hidden = !isOpen;
+  button.setAttribute("aria-expanded", String(isOpen));
+}
+
+function toggleLanguageMenu() {
+  const menu = document.getElementById("language-menu");
+  if (menu) setLanguageMenuOpen(menu.hidden);
+}
+
+function closeLanguageMenu(returnFocus = false) {
+  setLanguageMenuOpen(false);
+  if (returnFocus) document.getElementById("language-select")?.focus();
+}
+
+function renderLanguageMenu(selectedLanguage) {
+  const menu = document.getElementById("language-menu");
+  if (!menu) return;
+
+  menu.replaceChildren();
+  for (const [code, locale] of Object.entries(window.MINDMETRIC_I18N)) {
+    const option = document.createElement("button");
+    option.type = "button";
+    option.className = "language-option inline-flex w-full items-center gap-2 whitespace-nowrap px-3 py-2 text-start text-sm text-slate-700 hover:bg-indigo-50";
+    option.setAttribute("role", "menuitemradio");
+    option.setAttribute("aria-checked", String(code === selectedLanguage));
+    option.onclick = () => {
+      closeLanguageMenu();
+      changeLanguage(code);
+    };
+
+    const flag = document.createElement("img");
+    flag.src = `./assets/flags/${languageFlags[code]}.svg`;
+    flag.alt = "";
+    flag.setAttribute("aria-hidden", "true");
+    flag.className = "h-4 w-5 rounded-sm object-cover";
+
+    const name = document.createElement("span");
+    name.textContent = locale.name;
+    option.append(flag, name);
+    menu.append(option);
+  }
 }
 
 function applySiteLanguage(language) {
@@ -1059,8 +1166,10 @@ function applySiteLanguage(language) {
 
   const languageSelect = document.getElementById("language-select");
   if (languageSelect) {
-    languageSelect.value = selectedLanguage;
     languageSelect.setAttribute("aria-label", locale.languageLabel);
+    document.getElementById("language-name").textContent = locale.name;
+    document.getElementById("language-flag").src = `./assets/flags/${languageFlags[selectedLanguage]}.svg`;
+    renderLanguageMenu(selectedLanguage);
   }
   document.querySelectorAll("[aria-label]").forEach(element => {
     const originalLabel = element.dataset.originalAriaLabel || element.getAttribute("aria-label");
@@ -1079,7 +1188,10 @@ function applySiteLanguage(language) {
     const original = originalTextNodes.get(node);
     const key = normalizeTranslationKey(original);
     const translated = locale.text[key];
-    if (translated === undefined) continue;
+    if (translated === undefined) {
+      node.textContent = original;
+      continue;
+    }
 
     const leadingWhitespace = original.match(/^\s*/)?.[0] || "";
     const trailingWhitespace = original.match(/\s*$/)?.[0] || "";
@@ -1102,8 +1214,37 @@ function changeLanguage(language) {
   applySiteLanguage(language);
 }
 
+document.addEventListener("click", event => {
+  if (!document.getElementById("language-picker")?.contains(event.target)) {
+    closeLanguageMenu();
+  }
+});
+document.addEventListener("keydown", event => {
+  const menu = document.getElementById("language-menu");
+  if (!menu || menu.hidden) return;
+
+  if (event.key === "Escape") {
+    event.preventDefault();
+    closeLanguageMenu(true);
+    return;
+  }
+
+  const options = [...menu.querySelectorAll('[role="menuitemradio"]')];
+  const currentIndex = options.indexOf(document.activeElement);
+  let nextIndex;
+  if (event.key === "ArrowDown") nextIndex = (currentIndex + 1) % options.length;
+  else if (event.key === "ArrowUp") nextIndex = (currentIndex - 1 + options.length) % options.length;
+  else if (event.key === "Home") nextIndex = 0;
+  else if (event.key === "End") nextIndex = options.length - 1;
+  if (nextIndex !== undefined) {
+    event.preventDefault();
+    options[nextIndex].focus();
+  }
+});
+
 window.applySiteLanguage = applySiteLanguage;
 window.changeLanguage = changeLanguage;
+window.toggleLanguageMenu = toggleLanguageMenu;
 window.getSiteLocale = function () {
   return window.MINDMETRIC_I18N[document.documentElement.lang] || window.MINDMETRIC_I18N.ru;
 };
