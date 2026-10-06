@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kjonghon.github.io/MBTI/sitemap.xml

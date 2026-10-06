@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-adsense-account" content="ca-pub-3017516388424197">
-  <title>MINDMETRIC | 정밀 성격유형 검사</title>
+  <meta name="description" content="16개 자기성찰 문항으로 외향·내향, 감각·직관, 사고·감정, 판단·인식 경향을 살펴보세요. 점수 계산 방식과 검사 한계를 투명하게 안내합니다.">
+  <meta name="theme-color" content="#f8fafc">
+  <link rel="canonical" href="https://kjonghon.github.io/MBTI/">
+  <title>무료 4축 성향 자기성찰 검사 | MINDMETRIC</title>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3017516388424197"
      crossorigin="anonymous"></script>
   <script>
@@ -169,7 +172,7 @@
       </div>
       <div class="flex items-center space-x-2 sm:space-x-4 text-sm text-slate-500 font-medium">
         <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs">
-          <i class="fa-solid fa-shield-halved text-indigo-500"></i> 임상 심리 프레임워크 기반
+          <i class="fa-solid fa-compass text-indigo-500"></i> 비진단 자기성찰 도구
         </span>
         <button id="theme-toggle" type="button" onclick="toggleTheme()" aria-label="다크 모드로 전환" aria-pressed="false" class="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-2 sm:px-3 py-2 text-slate-600 hover:bg-slate-100 transition">
           <i id="theme-toggle-icon" class="fa-solid fa-moon" aria-hidden="true"></i>
@@ -186,28 +189,28 @@
     <!-- 1. LANDING VIEW -->
     <section id="view-landing" class="max-w-3xl w-full text-center">
       <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-50 border border-indigo-100/80 text-indigo-700 text-xs font-semibold uppercase tracking-wider mb-6">
-        <i class="fa-solid fa-atom animate-spin-slow"></i> 차세대 4축 심리 척도 분석
+        <i class="fa-solid fa-compass"></i> 나를 돌아보는 4가지 관점
       </div>
 
       <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-950 tracking-tight leading-tight mb-5">
-        나의 숨겨진 잠재력과 행동 양식을<br class="hidden sm:inline"/> 
-        <span class="text-indigo-600">객관적 데이터</span>로 진단하세요.
+        네 가지 선호 경향을 살펴보고<br class="hidden sm:inline"/>
+        <span class="text-indigo-600">나만의 방식</span>을 돌아보세요.
       </h1>
 
       <p class="text-base sm:text-lg text-slate-600 max-w-xl mx-auto mb-10 leading-relaxed font-normal">
-        칼 융(Carl Jung)의 심리유형론을 기반으로 신뢰도 높은 문항 설계를 거쳤습니다. 
-        약 3분의 검사를 통해 당신만의 고유한 성향 보고서를 무료로 받아보실 수 있습니다.
+        16개 문항에 답하면 에너지, 정보 인식, 의사결정, 생활 방식에 관한 경향 점수와 설명을 확인할 수 있습니다.
+        약 3분이 걸리며 답변은 이 브라우저 안에서만 계산됩니다.
       </p>
 
-      <!-- 신뢰 지표 카드 3구 -->
+      <!-- 검사 안내 -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10 text-left">
         <div class="p-4 rounded-xl border border-slate-200 bg-white shadow-sm flex items-start space-x-3">
           <div class="p-2.5 rounded-lg bg-indigo-50 text-indigo-600 text-lg">
             <i class="fa-regular fa-clock"></i>
           </div>
           <div>
-            <h4 class="text-sm font-semibold text-slate-900">소요 시간 3분</h4>
-            <p class="text-xs text-slate-500 mt-0.5">핵심 16개 표준화 문항 구성</p>
+            <h4 class="text-sm font-semibold text-slate-900">16개 자기성찰 문항</h4>
+            <p class="text-xs text-slate-500 mt-0.5">각 축을 살펴보는 자체 구성 질문</p>
           </div>
         </div>
         <div class="p-4 rounded-xl border border-slate-200 bg-white shadow-sm flex items-start space-x-3">
@@ -215,8 +218,8 @@
             <i class="fa-solid fa-chart-pie"></i>
           </div>
           <div>
-            <h4 class="text-sm font-semibold text-slate-900">상세 백분율 분석</h4>
-            <p class="text-xs text-slate-500 mt-0.5">단순 유형이 아닌 스펙트럼 지표</p>
+            <h4 class="text-sm font-semibold text-slate-900">점수 계산 방식 공개</h4>
+            <p class="text-xs text-slate-500 mt-0.5">인구 통계가 아닌 응답 기반 환산값</p>
           </div>
         </div>
         <div class="p-4 rounded-xl border border-slate-200 bg-white shadow-sm flex items-start space-x-3">
@@ -224,8 +227,8 @@
             <i class="fa-solid fa-user-lock"></i>
           </div>
           <div>
-            <h4 class="text-sm font-semibold text-slate-900">완전한 익명 보장</h4>
-            <p class="text-xs text-slate-500 mt-0.5">개인정보를 일절 저장하지 않음</p>
+            <h4 class="text-sm font-semibold text-slate-900">답변은 브라우저에서 계산</h4>
+            <p class="text-xs text-slate-500 mt-0.5">답변을 서버에 전송하거나 저장하지 않습니다</p>
           </div>
         </div>
       </div>
@@ -331,7 +334,7 @@
           <h1 id="res-code" class="text-4xl sm:text-6xl font-black tracking-tight text-white mb-2">INTJ</h1>
           <p id="res-title" class="text-xl sm:text-2xl font-bold text-indigo-300">용의주도한 전략가</p>
           <p id="res-tagline" class="text-xs sm:text-sm text-slate-300 mt-2 max-w-md mx-auto">
-            전체 인구의 상위 2%에 속하는 지적 호기심과 전략적 비전의 소유자
+            네 가지 선호 경향에 대한 자기성찰 결과
           </p>
         </div>
 
@@ -427,7 +430,7 @@
           <!-- 추천 직업군 -->
           <div class="border-t border-slate-100 pt-6">
             <h3 class="text-sm font-bold text-slate-900 mb-3 flex items-center gap-2">
-              <i class="fa-solid fa-briefcase text-indigo-600"></i> 최적의 직무 및 역량
+              <i class="fa-solid fa-briefcase text-indigo-600"></i> 관심을 살펴볼 직무 아이디어
             </h3>
             <div id="res-careers" class="flex flex-wrap gap-2">
               <!-- 동적 뱃지 -->
@@ -438,7 +441,7 @@
         <!-- 하단 공유 및 다시하기 액션 -->
         <div class="bg-slate-50 border-t border-slate-200 px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <button onclick="shareResult()" class="w-full sm:w-auto px-5 py-2.5 rounded-lg border border-slate-300 bg-white hover:bg-slate-100 text-slate-700 text-sm font-semibold transition flex items-center justify-center gap-2 shadow-sm">
-            <i class="fa-regular fa-share-from-square"></i> 결과 링크 복사
+            <i class="fa-regular fa-share-from-square"></i> 결과 공유
           </button>
           <button onclick="restartTest()" class="w-full sm:w-auto px-6 py-2.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold transition flex items-center justify-center gap-2 shadow-sm">
             <i class="fa-solid fa-rotate-right"></i> 테스트 다시하기
@@ -449,17 +452,97 @@
 
   </main>
 
+  <!-- ==================== ORIGINAL GUIDE ==================== -->
+  <section id="guide" aria-labelledby="guide-heading" class="w-full max-w-4xl mx-auto px-4 pb-12 space-y-8">
+    <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8">
+      <div class="mb-6">
+        <p class="text-xs font-semibold uppercase tracking-wider text-indigo-600 mb-2">검사 안내</p>
+        <h2 id="guide-heading" class="text-2xl font-bold text-slate-900">네 가지 경향을 어떻게 읽을까요?</h2>
+        <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+          이 도구는 성격을 좋고 나쁨으로 나누지 않습니다. 상황에 따라 달라질 수 있는 선호를 네 축으로 돌아보도록 돕습니다.
+          한쪽 점수가 높더라도 반대 성향이 없다는 뜻은 아닙니다.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <article class="rounded-xl border border-slate-200 bg-slate-50 p-5">
+          <h3 class="font-bold text-slate-900 mb-2">에너지의 초점 · E / I</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">사람들과 교류하며 활력을 얻는 편인지, 혼자 생각을 정리하며 에너지를 회복하는 편인지 살펴봅니다. 외향성은 사교 능력의 우열을 뜻하지 않습니다.</p>
+        </article>
+        <article class="rounded-xl border border-slate-200 bg-slate-50 p-5">
+          <h3 class="font-bold text-slate-900 mb-2">정보를 보는 방식 · S / N</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">구체적인 사실과 현재의 세부 사항에 주목하는지, 연결된 패턴과 앞으로의 가능성을 먼저 떠올리는지 살펴봅니다. 어느 쪽도 더 창의적이거나 현실적이라는 뜻은 아닙니다.</p>
+        </article>
+        <article class="rounded-xl border border-slate-200 bg-slate-50 p-5">
+          <h3 class="font-bold text-slate-900 mb-2">결정을 내리는 기준 · T / F</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">일관된 원칙과 논리를 우선하는지, 관련된 사람들의 가치와 영향을 함께 고려하는지 돌아봅니다. 사고형과 감정형은 지능이나 공감 능력을 재는 점수가 아닙니다.</p>
+        </article>
+        <article class="rounded-xl border border-slate-200 bg-slate-50 p-5">
+          <h3 class="font-bold text-slate-900 mb-2">일상을 다루는 방식 · J / P</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">계획을 세우고 일을 마무리할 때 편안함을 느끼는지, 선택지를 열어 두고 변화에 맞추는 편인지 살펴봅니다. 계획성이나 책임감의 우열을 뜻하지 않습니다.</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <article class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8">
+        <h2 class="text-xl font-bold text-slate-900 mb-3">점수는 이렇게 계산합니다</h2>
+        <ol class="list-decimal list-inside space-y-2 text-sm text-slate-600 leading-relaxed">
+          <li>각 문항에서 동의 정도를 -3부터 +3까지 선택합니다. 0은 중립입니다.</li>
+          <li>각 축의 네 응답을 합산합니다. 일부 문항은 반대 방향 문항이므로 합산 전에 부호를 반전합니다.</li>
+          <li>축별 합계 -12~+12를 0~100으로 선형 환산합니다. 예를 들어 +6은 75%, 반대편은 25%입니다.</li>
+          <li>50% 이상이면 해당 축의 첫 번째 글자(E, S, T, J), 미만이면 반대 글자(I, N, F, P)를 결과 코드에 사용합니다.</li>
+        </ol>
+        <p class="text-xs text-slate-500 mt-4 leading-relaxed">
+          백분율은 이 사이트의 응답 환산값이며, 인구 집단과 비교한 백분위·확률·정확도 또는 과학적으로 검증된 척도 점수가 아닙니다.
+        </p>
+      </article>
+
+      <article class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8">
+        <h2 class="text-xl font-bold text-slate-900 mb-3">검사의 범위와 한계</h2>
+        <div class="space-y-3 text-sm text-slate-600 leading-relaxed">
+          <p>문항과 결과 설명은 MINDMETRIC이 만든 비공식 자기성찰 콘텐츠입니다. 임상 심리 검사, 진단 도구, 공식 MBTI® 검사 또는 검증된 채용·진로 평가가 아닙니다.</p>
+          <p>문항은 표준화 표본으로 보정되거나 신뢰도·타당도 연구를 거치지 않았습니다. 결과는 당시의 자기 인식과 문항 해석에 따라 달라질 수 있으며, 중요한 건강·교육·직업 결정을 위한 근거로 사용하지 마세요.</p>
+          <p>유형별 강점·주의점과 직무 예시는 일반적인 성찰 질문입니다. 실제 개인의 능력, 성격 전체 또는 직업 적합성을 확정하지 않습니다.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8">
+      <h2 class="text-xl font-bold text-slate-900 mb-4">자주 묻는 질문</h2>
+      <div class="space-y-5">
+        <article>
+          <h3 class="font-semibold text-slate-900">정식 MBTI 검사인가요?</h3>
+          <p class="text-sm text-slate-600 mt-1 leading-relaxed">아닙니다. 네 가지 이분법의 표기를 참고한 독립적인 간이 자기성찰 도구이며, The Myers-Briggs Company 또는 공식 MBTI® 검사와 제휴·승인 관계가 없습니다.</p>
+        </article>
+        <article>
+          <h3 class="font-semibold text-slate-900">답변이나 결과가 저장되나요?</h3>
+          <p class="text-sm text-slate-600 mt-1 leading-relaxed">검사 답변과 계산 결과는 현재 페이지가 열린 동안 브라우저 메모리에만 있으며, 이 사이트 서버로 전송하지 않습니다. 페이지를 새로고침하거나 닫으면 답변은 초기화됩니다. 다크모드 선택은 브라우저의 로컬 저장소에 저장됩니다. 광고 및 사이트 외부 리소스 처리에 관한 내용은 <a href="privacy.html" class="text-indigo-600 underline">개인정보 및 광고 안내</a>를 확인하세요.</p>
+        </article>
+        <article>
+          <h3 class="font-semibold text-slate-900">점수가 높을수록 더 좋은 성향인가요?</h3>
+          <p class="text-sm text-slate-600 mt-1 leading-relaxed">아닙니다. 축의 어느 쪽도 우월하지 않습니다. 점수는 이 간이 도구 안에서 응답 방향과 강도를 읽기 쉽게 표시하는 값일 뿐입니다.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <!-- ==================== FOOTER ==================== -->
   <footer class="border-t border-slate-200 bg-white py-8 text-center text-xs text-slate-400">
     <div class="max-w-6xl mx-auto px-4 space-y-2">
-      <p>© 2026 MINDMETRIC Psychometrics Lab. All rights reserved.</p>
-      <p>본 검사는 통계적 성격 분류 모델을 기반으로 하며, 의학적/정신과적 진단을 대체할 수 없습니다.</p>
+      <p>© 2026 MINDMETRIC. All rights reserved.</p>
+      <nav aria-label="사이트 정보" class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 pt-2">
+        <a href="#guide" class="text-indigo-600 hover:underline">검사 방법과 한계</a>
+        <a href="privacy.html" class="text-indigo-600 hover:underline">개인정보 및 광고 안내</a>
+        <a href="mailto:kjonghon1@gmail.com" class="text-indigo-600 hover:underline">운영자 문의</a>
+      </nav>
+      <p class="pt-2">본 콘텐츠는 자기성찰 목적이며 심리·의학적 진단이나 공식 MBTI® 검사 결과를 대체하지 않습니다.</p>
     </div>
   </footer>
 
   <!-- ==================== SCRIPT (LOGIC) ==================== -->
   <script>
-    // 16개 표준 질문 (축별 4문항: 양의 방향이 E, S, T, J)
+    // 16개 자체 구성 문항 (축별 4문항: 양의 방향이 E, S, T, J)
     const questions = [
       // E vs I (양수 = E, 음수 = I)
       { id: 1, axis: 'EI', sign: 1, text: "새로운 사람들과 모여 대화를 나누면 에너지가 충전되는 편이다." },
@@ -810,13 +893,36 @@
     }
 
     function shareResult() {
-      if (navigator.clipboard) {
-        navigator.clipboard.writeText(window.location.href).then(() => {
-          alert("테스트 링크가 클립보드에 복사되었습니다. 친구들과 결과를 공유해보세요!");
+      const code = document.getElementById('res-code').innerText;
+      const title = document.getElementById('res-title').innerText;
+      const shareData = {
+        title: 'MINDMETRIC 성향 자기성찰 결과',
+        text: `내 자기성찰 결과는 ${code} (${title})입니다. 이 결과는 비공식 참고용입니다.`,
+        url: window.location.href
+      };
+
+      if (navigator.share) {
+        navigator.share(shareData).catch(error => {
+          if (error.name !== 'AbortError') {
+            console.error('결과 공유에 실패했습니다.', error);
+            alert('결과 공유에 실패했습니다. 페이지 주소를 직접 복사해 주세요.');
+          }
         });
-      } else {
-        alert("주소창의 링크를 복사하여 공유하실 수 있습니다.");
+        return;
       }
+
+      const shareText = `${shareData.text}\n${shareData.url}`;
+      if (!navigator.clipboard) {
+        alert(`결과를 공유하려면 다음 내용을 복사해 주세요.\n\n${shareText}`);
+        return;
+      }
+
+      navigator.clipboard.writeText(shareText).then(() => {
+        alert('결과와 페이지 주소를 복사했습니다.');
+      }).catch(error => {
+        console.error('결과 복사에 실패했습니다.', error);
+        alert('결과 복사에 실패했습니다. 페이지 주소를 직접 복사해 주세요.');
+      });
     }
   </script>
 </body>
