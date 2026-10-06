@@ -151,17 +151,6 @@
       color: #f8fafc;
     }
 
-    html[data-theme="dark"] #partnership-form input,
-    html[data-theme="dark"] #partnership-form textarea {
-      background-color: #0f172a;
-      border-color: #475569;
-      color: #f1f5f9;
-    }
-
-    html[data-theme="dark"] #partnership-form input::placeholder,
-    html[data-theme="dark"] #partnership-form textarea::placeholder {
-      color: #94a3b8;
-    }
   </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col justify-between selection:bg-indigo-500 selection:text-white">
@@ -456,49 +445,6 @@
     </section>
 
   </main>
-
-  <!-- ==================== PARTNERSHIP CONTACT ==================== -->
-  <section aria-labelledby="partnership-heading" class="w-full max-w-3xl mx-auto px-4 pb-12">
-    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 sm:p-8">
-      <div class="mb-6">
-        <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-indigo-600 mb-2">
-          <i class="fa-solid fa-handshake" aria-hidden="true"></i> Partnership
-        </span>
-        <h2 id="partnership-heading" class="text-2xl font-bold text-slate-900">제휴 문의</h2>
-        <p class="text-sm text-slate-600 mt-2">협업 제안을 남겨주시면 확인 후 연락드리겠습니다.</p>
-      </div>
-
-      <form id="partnership-form" action="https://formspree.io/f/mgaoewkp" method="POST" class="space-y-4">
-        <input type="hidden" name="_subject" value="MINDMETRIC 제휴 문의">
-        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="hidden">
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <label for="partnership-name" class="block text-sm font-medium text-slate-700 mb-1.5">이름 <span class="text-rose-600">*</span></label>
-            <input id="partnership-name" name="name" type="text" autocomplete="name" required class="w-full rounded-lg border border-slate-200 bg-white px-3.5 py-2.5 text-sm text-slate-800 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20">
-          </div>
-          <div>
-            <label for="partnership-email" class="block text-sm font-medium text-slate-700 mb-1.5">이메일 <span class="text-rose-600">*</span></label>
-            <input id="partnership-email" name="email" type="email" autocomplete="email" required class="w-full rounded-lg border border-slate-200 bg-white px-3.5 py-2.5 text-sm text-slate-800 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20">
-          </div>
-        </div>
-
-        <div>
-          <label for="partnership-organization" class="block text-sm font-medium text-slate-700 mb-1.5">회사 / 브랜드명 <span class="text-slate-400">(선택)</span></label>
-          <input id="partnership-organization" name="organization" type="text" autocomplete="organization" class="w-full rounded-lg border border-slate-200 bg-white px-3.5 py-2.5 text-sm text-slate-800 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20">
-        </div>
-
-        <div>
-          <label for="partnership-message" class="block text-sm font-medium text-slate-700 mb-1.5">제휴 내용 <span class="text-rose-600">*</span></label>
-          <textarea id="partnership-message" name="message" rows="5" required class="w-full resize-y rounded-lg border border-slate-200 bg-white px-3.5 py-2.5 text-sm text-slate-800 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20"></textarea>
-        </div>
-
-        <button type="submit" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-lg bg-indigo-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-          문의 보내기 <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i>
-        </button>
-      </form>
-    </div>
-  </section>
 
   <!-- ==================== FOOTER ==================== -->
   <footer class="border-t border-slate-200 bg-white py-8 text-center text-xs text-slate-400">
