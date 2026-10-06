@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,7 +31,8 @@
     html[data-theme="dark"] footer { background: #1e293b; border-color: #334155; }
     header { border-bottom: 1px solid; }
     header nav, main, footer > div { max-width: 860px; margin: 0 auto; padding: 16px 24px; }
-    header nav, footer nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    header nav, footer nav { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    header nav select { max-width: 8rem; padding: 8px 6px; border: 1px solid #cbd5e1; border-radius: 8px; color: inherit; background: transparent; }
     main { padding-top: 40px; padding-bottom: 48px; }
     h1 { font-size: clamp(1.8rem, 5vw, 2.4rem); line-height: 1.2; }
     h2 { margin-top: 32px; font-size: 1.2rem; }
@@ -42,6 +43,7 @@
     .notice { padding: 16px; border: 1px solid #c7d2fe; border-radius: 12px; background: #eef2ff; }
     html[data-theme="dark"] .notice { border-color: #37316d; background: #292554; }
     html[data-theme="dark"] .notice p { color: #e0e7ff; }
+    html[dir="rtl"] main { direction: rtl; }
     footer { border-top: 1px solid; font-size: .9rem; }
     button { padding: 8px 12px; border: 1px solid #cbd5e1; border-radius: 8px; color: inherit; background: transparent; cursor: pointer; }
     @media (max-width: 560px) {
@@ -50,6 +52,15 @@
     }
   </style>
   <script>
+    try {
+      const savedLanguage = localStorage.getItem('mindmetric-language');
+      document.documentElement.lang = ['ru', 'kk', 'en', 'es', 'zh', 'ar'].includes(savedLanguage) ? savedLanguage : 'ru';
+      document.documentElement.dir = savedLanguage === 'ar' ? 'rtl' : 'ltr';
+    } catch (error) {
+      console.error('언어 설정을 불러오지 못했습니다.', error);
+      document.documentElement.lang = 'ru';
+      document.documentElement.dir = 'ltr';
+    }
     try {
       const savedTheme = localStorage.getItem('mindmetric-theme');
       if (savedTheme === 'dark' || savedTheme === 'light') {
@@ -64,6 +75,14 @@
   <header>
     <nav aria-label="주요 메뉴">
       <a href="./" style="font-weight:700;text-decoration:none">MINDMETRIC</a>
+      <select id="language-select" aria-label="Выберите язык" onchange="changeLanguage(this.value)">
+        <option value="ru">Русский</option>
+        <option value="kk">Қазақша</option>
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="zh">中文</option>
+        <option value="ar">العربية</option>
+      </select>
       <button id="theme-toggle" type="button" aria-pressed="false" onclick="toggleTheme()">테마 전환</button>
     </nav>
   </header>
@@ -80,7 +99,7 @@
     <p>검사 답변과 계산 결과는 페이지가 열린 동안 브라우저 메모리에서만 처리됩니다. 사이트 운영자는 이 답변이나 결과를 서버로 전송하거나 계정·데이터베이스에 저장하지 않습니다. 페이지를 새로고침하거나 닫으면 답변이 초기화됩니다. 결과 공유 기능을 사용하면 선택한 기기의 공유 기능 또는 클립보드에 결과 코드와 현재 페이지 주소가 전달됩니다.</p>
 
     <h2>브라우저 저장소</h2>
-    <p>다크모드 선택을 기억하기 위해 브라우저의 로컬 저장소에 <code>mindmetric-theme</code> 값을 저장합니다. 이 값은 사이트가 방문자의 테마를 기억하는 데만 쓰이며, 브라우저 설정에서 사이트 데이터를 삭제하면 지울 수 있습니다. 검사 응답은 로컬 저장소에 기록하지 않습니다.</p>
+    <p>다크모드와 선택 언어를 기억하기 위해 브라우저의 로컬 저장소에 <code>mindmetric-theme</code> 및 <code>mindmetric-language</code> 값을 저장합니다. 이 값은 사이트가 방문자의 테마와 언어를 기억하는 데만 쓰이며, 브라우저 설정에서 사이트 데이터를 삭제하면 지울 수 있습니다. 검사 응답은 로컬 저장소에 기록하지 않습니다.</p>
 
     <h2>광고 및 쿠키</h2>
     <p>사이트는 Google AdSense를 사용합니다. Google 및 광고 게재에 참여하는 서드파티 공급업체는 광고를 제공·측정하고, 설정에 따라 개인 맞춤 광고를 표시하기 위해 쿠키 또는 유사한 로컬 저장소를 사용할 수 있습니다. 이 기술은 이 사이트나 다른 사이트의 방문 정보, 브라우저 및 광고 상호작용 정보 등을 처리할 수 있습니다. 광고 공급자의 처리에 대해서는 각 공급자의 정책이 적용됩니다.</p>
@@ -119,6 +138,7 @@
     </div>
   </footer>
 
+  <script src="translations.js"></script>
   <script>
     function toggleTheme() {
       const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
@@ -135,6 +155,7 @@
 
     const themeToggle = document.getElementById('theme-toggle');
     themeToggle.setAttribute('aria-pressed', String(document.documentElement.dataset.theme === 'dark'));
+    applySiteLanguage(document.documentElement.lang);
   </script>
 </body>
 </html>
