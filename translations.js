@@ -1143,7 +1143,7 @@ function renderLanguageMenu(selectedLanguage) {
     flag.src = `./assets/flags/${languageFlags[code]}.svg`;
     flag.alt = "";
     flag.setAttribute("aria-hidden", "true");
-    flag.className = "h-4 w-5 rounded-sm object-cover";
+    flag.className = "h-3 w-[1.125rem] shrink-0 rounded-sm object-contain";
 
     const name = document.createElement("span");
     name.textContent = locale.name;

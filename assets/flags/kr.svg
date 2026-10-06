@@ -1,19 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20">
   <path fill="#fff" d="M0 0h30v20H0z"/>
-  <path fill="#cd2e3a" d="M15 4.5a5.5 5.5 0 0 1 0 11 2.75 2.75 0 0 0 0-5.5 2.75 2.75 0 0 1 0-5.5z"/>
-  <path fill="#0047a0" d="M15 7.25a2.75 2.75 0 0 0 0 5.5 2.75 2.75 0 0 1 0 5.5 5.5 5.5 0 0 1 0-11z"/>
+  <circle cx="15" cy="10" r="5" fill="#0047a0"/>
+  <path fill="#cd2e3a" d="M10 10A5 5 0 0 1 20 10A2.5 2.5 0 0 1 15 10A2.5 2.5 0 0 0 10 10Z"/>
   <g fill="#000">
-    <g transform="rotate(-45 6.1 4.1)">
-      <path d="M3.7 2.9h4.8v.65H3.7zM3.7 4h4.8v.65H3.7zM3.7 5.1h4.8v.65H3.7z"/>
+    <g transform="rotate(-45 5.5 5)">
+      <path d="M3 2.8h5v.65H3zM3 4.65h5v.65H3zM3 6.5h5v.65H3z"/>
     </g>
-    <g transform="rotate(45 23.9 4.1)">
-      <path d="M21.5 2.9h4.8v.65h-4.8zM21.5 4h2.05v.65H21.5zM24.25 4h2.05v.65h-2.05zM21.5 5.1h4.8v.65h-4.8z"/>
+    <g transform="rotate(45 24.5 5)">
+      <path d="M22 2.8h2.1v.65H22zM24.9 2.8H27v.65h-2.1zM22 4.65h5v.65h-5zM22 6.5h2.1v.65H22zM24.9 6.5H27v.65h-2.1z"/>
     </g>
-    <g transform="rotate(45 6.1 15.9)">
-      <path d="M3.7 14.7h4.8v.65H3.7zM3.7 15.8h2.05v.65H3.7zM6.45 15.8H8.5v.65H6.45zM3.7 16.9h4.8v.65H3.7z"/>
+    <g transform="rotate(45 5.5 15)">
+      <path d="M3 12.8h5v.65H3zM3 14.65h2.1v.65H3zM5.9 14.65H8v.65H5.9zM3 16.5h5v.65H3z"/>
     </g>
-    <g transform="rotate(-45 23.9 15.9)">
-      <path d="M21.5 14.7h4.8v.65h-4.8zM21.5 15.8h4.8v.65h-4.8zM21.5 16.9h4.8v.65h-4.8z"/>
+    <g transform="rotate(-45 24.5 15)">
+      <path d="M22 12.8h2.1v.65H22zM24.9 12.8H27v.65h-2.1zM22 14.65h2.1v.65H22zM24.9 14.65H27v.65h-2.1zM22 16.5h2.1v.65H22zM24.9 16.5H27v.65h-2.1z"/>
     </g>
   </g>
 </svg>
