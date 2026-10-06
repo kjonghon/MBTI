@@ -4,9 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index,follow">
-  <meta name="description" content="MINDMETRIC의 검사 답변 처리, 브라우저 저장소, Google AdSense 광고 쿠키 및 개인정보 문의 방법을 안내합니다.">
+  <meta name="description" content="Политика конфиденциальности MINDMETRIC: обработка ответов теста в браузере, локальные настройки, реклама Google AdSense и способы связи.">
   <meta name="theme-color" content="#f8fafc">
-  <title>개인정보 및 광고 안내 | MINDMETRIC</title>
+  <link rel="canonical" href="https://kjonghon.github.io/MBTI/privacy.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MINDMETRIC">
+  <meta property="og:title" content="Конфиденциальность и реклама | MINDMETRIC">
+  <meta property="og:description" content="Как MINDMETRIC обрабатывает ответы теста, настройки браузера, рекламные cookie и запросы о конфиденциальности.">
+  <meta property="og:url" content="https://kjonghon.github.io/MBTI/privacy.html">
+  <meta property="og:locale" content="ru_RU">
+  <title>Конфиденциальность и реклама | MINDMETRIC</title>
   <style>
     :root {
       color-scheme: light;
@@ -64,8 +71,10 @@
   <script>
     try {
       const savedLanguage = localStorage.getItem('mindmetric-language');
-      document.documentElement.lang = ['ru', 'kk', 'en', 'es', 'zh', 'ar', 'ko'].includes(savedLanguage) ? savedLanguage : 'ru';
-      document.documentElement.dir = savedLanguage === 'ar' ? 'rtl' : 'ltr';
+      const routeLanguage = new URLSearchParams(location.search).get('lang');
+      const preferredLanguage = ['ru', 'kk', 'en', 'es', 'zh', 'ar', 'ko'].includes(routeLanguage) ? routeLanguage : savedLanguage;
+      document.documentElement.lang = ['ru', 'kk', 'en', 'es', 'zh', 'ar', 'ko'].includes(preferredLanguage) ? preferredLanguage : 'ru';
+      document.documentElement.dir = preferredLanguage === 'ar' ? 'rtl' : 'ltr';
     } catch (error) {
       console.error('언어 설정을 불러오지 못했습니다.', error);
       document.documentElement.lang = 'ru';

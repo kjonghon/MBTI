@@ -1205,6 +1205,12 @@ function applySiteLanguage(language) {
 function changeLanguage(language) {
   if (!window.MINDMETRIC_I18N[language]) return;
 
+  const url = new URL(location.href);
+  if (url.searchParams.has("lang")) {
+    url.searchParams.set("lang", language);
+    history.replaceState(null, "", url);
+  }
+
   try {
     localStorage.setItem("mindmetric-language", language);
   } catch (error) {

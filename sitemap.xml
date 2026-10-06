@@ -1,9 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://kjonghon.github.io/MBTI/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru-RU" href="https://kjonghon.github.io/MBTI/ru/"/>
+    <xhtml:link rel="alternate" hreflang="kk-KZ" href="https://kjonghon.github.io/MBTI/kk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kjonghon.github.io/MBTI/"/>
+  </url>
+  <url>
+    <loc>https://kjonghon.github.io/MBTI/ru/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru-RU" href="https://kjonghon.github.io/MBTI/ru/"/>
+    <xhtml:link rel="alternate" hreflang="kk-KZ" href="https://kjonghon.github.io/MBTI/kk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kjonghon.github.io/MBTI/"/>
+  </url>
+  <url>
+    <loc>https://kjonghon.github.io/MBTI/kk/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru-RU" href="https://kjonghon.github.io/MBTI/ru/"/>
+    <xhtml:link rel="alternate" hreflang="kk-KZ" href="https://kjonghon.github.io/MBTI/kk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kjonghon.github.io/MBTI/"/>
   </url>
   <url>
     <loc>https://kjonghon.github.io/MBTI/privacy.html</loc>
+    <lastmod>2026-10-06</lastmod>
   </url>
 </urlset>

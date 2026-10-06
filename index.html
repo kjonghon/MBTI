@@ -4,17 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-adsense-account" content="ca-pub-3017516388424197">
-  <meta name="description" content="16개 자기성찰 문항으로 외향·내향, 감각·직관, 사고·감정, 판단·인식 경향을 살펴보세요. 점수 계산 방식과 검사 한계를 투명하게 안내합니다.">
+  <meta name="description" content="Бесплатный неофициальный тест MBTI на русском языке: 16 вопросов о четырёх предпочтениях, прозрачная методика подсчёта и объяснение ограничений результата.">
   <meta name="theme-color" content="#f8fafc">
   <link rel="canonical" href="https://kjonghon.github.io/MBTI/">
-  <title>무료 4축 성향 자기성찰 검사 | MINDMETRIC</title>
+  <link rel="alternate" hreflang="ru-RU" href="https://kjonghon.github.io/MBTI/ru/">
+  <link rel="alternate" hreflang="kk-KZ" href="https://kjonghon.github.io/MBTI/kk/">
+  <link rel="alternate" hreflang="x-default" href="https://kjonghon.github.io/MBTI/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MINDMETRIC">
+  <meta property="og:title" content="Бесплатный тест MBTI на русском | MINDMETRIC">
+  <meta property="og:description" content="16 вопросов для самоанализа по четырём шкалам. Узнайте метод подсчёта и ограничения неофициального результата.">
+  <meta property="og:url" content="https://kjonghon.github.io/MBTI/">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:locale:alternate" content="kk_KZ">
+  <meta name="twitter:card" content="summary">
+  <title>Бесплатный тест MBTI на русском онлайн | MINDMETRIC</title>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3017516388424197"
      crossorigin="anonymous"></script>
   <script>
     try {
       const savedLanguage = localStorage.getItem('mindmetric-language');
-      document.documentElement.lang = ['ru', 'kk', 'en', 'es', 'zh', 'ar', 'ko'].includes(savedLanguage) ? savedLanguage : 'ru';
-      document.documentElement.dir = savedLanguage === 'ar' ? 'rtl' : 'ltr';
+      const routeLanguage = new URLSearchParams(location.search).get('lang');
+      const preferredLanguage = ['ru', 'kk', 'en', 'es', 'zh', 'ar', 'ko'].includes(routeLanguage) ? routeLanguage : savedLanguage;
+      document.documentElement.lang = ['ru', 'kk', 'en', 'es', 'zh', 'ar', 'ko'].includes(preferredLanguage) ? preferredLanguage : 'ru';
+      document.documentElement.dir = preferredLanguage === 'ar' ? 'rtl' : 'ltr';
     } catch (error) {
       document.documentElement.lang = 'ru';
       document.documentElement.dir = 'ltr';
@@ -568,6 +581,8 @@
       <p>© 2026 MINDMETRIC. All rights reserved.</p>
       <nav aria-label="사이트 정보" class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 pt-2">
         <a href="#guide" class="text-indigo-600 hover:underline">검사 방법과 한계</a>
+        <a href="ru/" lang="ru" hreflang="ru-RU" class="text-indigo-600 hover:underline">Русский</a>
+        <a href="kk/" lang="kk" hreflang="kk-KZ" class="text-indigo-600 hover:underline">Қазақша</a>
         <a href="privacy.html" class="text-indigo-600 hover:underline">개인정보 및 광고 안내</a>
         <a href="mailto:kjonghon1@gmail.com" class="text-indigo-600 hover:underline">운영자 문의</a>
       </nav>
